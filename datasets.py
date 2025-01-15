@@ -76,9 +76,9 @@ class LangLocDataset(Dataset):
 
 class TOMLocDataset(Dataset):
     def __init__(self):
+        dirpath = "stimuli/tom/tomloc"
         instruction = "In this experiment, you will read a series of sentences and then answer True/False questions about them. Press button 1 to answer 'true' and button 2 to answer 'false'."
         context_template = "{instruction}\nStory: {story}\nQuestion: {question}\nAnswer: {answer}"
-        dirpath = "tomloc"
         belief_stories = [read_story(f"{dirpath}/{idx}b_story.txt") for idx in range(1, 11)]
         photograph_stories = [read_story(f"{dirpath}/{idx}p_story.txt") for idx in range(1, 11)]
 

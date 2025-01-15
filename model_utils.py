@@ -9,6 +9,7 @@ model_name_map = {
     "Llama-2-13b-hf": "LLaMA-2-13b",
     "Llama-2-13b-chat-hf": "LLaMA-2-13b-Instruct",
     "Meta-Llama-3.1-8B-Instruct": "LLaMA-3.1-8B-Instruct",
+    "Llama-3.2-3B-Instruct": "LLaMA-3.2-3B-Instruct",
     "Phi-3.5-mini-instruct": "Phi-3.5-Mini-Instruct",
     "gemma-1.1-7b-it": "Gemma-1.1-7B-Instruct",
     "gemma-2b": "Gemma-2B",
@@ -31,6 +32,7 @@ def get_num_blocks(model_name):
         "Llama-2-13b-hf": 40,
         "Llama-2-13b-chat-hf": 40,
         "Meta-Llama-3.1-8B-Instruct": 32,
+        "Llama-3.2-3B-Instruct": 28,
 
         "Phi-3.5-mini-instruct": 32,
 
@@ -65,6 +67,8 @@ def get_hidden_dim(model_name):
         "Llama-2-13b-chat-hf": 5120,
 
         "Meta-Llama-3.1-8B-Instruct": 4096,
+
+        "Llama-3.2-3B-Instruct": 3072,
 
         "Phi-3.5-mini-instruct": 3072,
 

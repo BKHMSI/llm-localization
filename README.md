@@ -14,8 +14,6 @@
 <img style="width: 75%" src='assets/language-localization.png'></img>
 </div>
 
-> To identify language-selective units, we compare activations in response to sentences versus non-words, and isolate the units that exhibit the strongest sentence selectivity. The same method is used in neuroscience to localize the human brain's language network.
-
 ## Setup
 
 1. Create conda environment: `conda create -n llm-loc python=3.10`
@@ -43,10 +41,10 @@
 #### Folders
 
 - **`stimuli/`**:  
-  Contains the localizer stimuli required for identifying selective units. These files are downloaded via the `scripts/download.sh` script.
+  Contains the localizer stimuli required for identifying selective units. These scripts to download the stimuli can be found in `scripts`.
 
 - **`scripts/`**:  
-  Contains bash scripts, including `download.sh`, which is used to download the localizer stimuli into the `stimuli` folder.
+  Contains bash scripts, including `download_lang_stimuli.sh` and `download_tom_stimuli.sh`, which is used to download the localizer stimuli into the `stimuli` folder, as well as example scripts to run localization.
 
 - **`cache/`**:  
   Stores the localized units' masks, which can be reused or overwritten based on the script options.
@@ -101,12 +99,13 @@
 
 ## Usage Instructions
 
-1. **Download Language Localizer Stimuli:**
+1. **Download Localizer Stimuli:**
    Run the following command to download the required language stimuli:
    ```bash
-   bash scripts/download.sh
+   bash scripts/download_lang_stimuli.sh
+   bash scripts/download_tom_stimuli.sh
    ```
-   The files will be saved in the `stimuli/language` directory.
+   The files will be saved in the `stimuli` directory.
 
 2. **Run the Localization Script:**
    Use the following command to localize the top language-selective units for your chosen model:
@@ -114,11 +113,11 @@
    python localize.py 
         --model-name <model_name> 
         --percentage <percentage>
-        --network language 
+        --network <network> 
         --localize-range 100-100 
         --pooling last-token
    ```
-   This will create a mask in the `cache` directory, which can be used to ablate or extract the identified language-selective units.
+   This will create a mask in the `cache` directory, which can be used to ablate or extract the identified network-selective units. See the `scripts` folder for examples. 
 
 3. **Run the Generation with Ablation Script:**
    See the example in `scripts/generate_lesion.sh`
