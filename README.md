@@ -11,7 +11,7 @@
 
 
 <div align='center'>
-<img style="width: 75%" src='assets/language-localization.png'></img>
+<img style="width: 75%" src='assets/llm-localization.png'></img>
 </div>
 
 ## Setup
