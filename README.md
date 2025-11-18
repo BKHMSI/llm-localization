@@ -4,6 +4,8 @@
   A Neuroscientific Approach for Identifying Causally Task-Relevant Units
 </h1>
 
+**Website**: https://llm-language-network.epfl.ch
+
 [![arXiv](https://img.shields.io/badge/arXiv-2411.02280-b31b1b.svg)](https://arxiv.org/abs/2411.02280)
 
 **Authors**: Badr AlKhamissi, Greta Tuckute, Antoine Bosselut*, Martin Schrimpf*
@@ -128,13 +130,23 @@ Large language models (LLMs) exhibit remarkable capabilities on not just languag
 
 ## Citation 
 ```
-@article{alkhamissi2024-llm-localization,
-      title={The LLM Language Network: A Neuroscientific Approach for Identifying Causally Task-Relevant Units}, 
-      author={Badr AlKhamissi and Greta Tuckute and Antoine Bosselut and Martin Schrimpf},
-      year={2024},
-      eprint={2411.02280},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2411.02280}, 
+ @inproceedings{alkhamissi-etal-2025-llm-language-network,
+    title = "The {LLM} Language Network: A Neuroscientific Approach for Identifying Causally Task-Relevant Units",
+    author = "AlKhamissi, Badr  and
+      Tuckute, Greta  and
+      Bosselut, Antoine  and
+      Schrimpf, Martin",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-long.544/",
+    doi = "10.18653/v1/2025.naacl-long.544",
+    pages = "10887--10911",
+    ISBN = "979-8-89176-189-6",
 }
 ```
